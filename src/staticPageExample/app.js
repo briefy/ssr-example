@@ -16,12 +16,9 @@ class App extends Component {
   }
 
   componentWillMount() {
-    window.location;
-    setTimeout(() => {
-      this.setState({
-        body: 'It functioned in willmount'
-      })
-    }, 1000);
+    this.setState({
+      body: 'It functioned in willmount'
+    });
   }
 
   componentDidMount() {
@@ -30,9 +27,6 @@ class App extends Component {
     })
   }
 
-  shouldComp() {
-    return false;
-  }
 
   render() {
     const { classes } = this.props;
