@@ -1,12 +1,3 @@
-/*
-* TODO: how to apply semicolon
-* such like no semi below,
-* import { method } from 'node';
-*
-* it("test",()=>{
-*   expect(3).toBe(3)
-* });
-*/
 {
   "extends": [
     "tslint-eslint-rules",
@@ -23,6 +14,10 @@
       "single",
       "jsx-double",
       "avoid-escape"
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
     ],
     "semicolon": [
       true,
@@ -132,10 +127,10 @@
         "modifiers": "abstract",
         "prefix": "Abstract"
       },
-      // interface names must start with "I". The following part of the name must be valid PascalCase
+      // interface names must NOT start with "I". The following part of the name must be valid PascalCase
       {
         "type": "interface",
-        "prefix": "I"
+        "prefix": ""
       },
       // generic type parameters must start with "T"
       // most of the time it will only be T, which is totally valid, because an empty string conforms to the PascalCase check

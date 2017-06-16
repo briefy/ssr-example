@@ -5,7 +5,7 @@
   "main": "component.js",
   "scripts": {
     "test": "jest --coverage",
-    "lint:ts": "tslint",
+    "lint:ts": "tslint *.ts",
     "start": "concurrently \"webpack --watch\" \"nodemon --watch ./server ./server/index.js\""
   },
   "jest": {
